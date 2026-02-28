@@ -1,4 +1,3 @@
-# bitrate-switcher-node-js
 # BSNJS
 
 Bitrate-based OBS scene switcher with Twitch chat control, automatic Twitch token refresh, and optional raid auto-stop.
@@ -14,7 +13,7 @@ Bitrate-based OBS scene switcher with Twitch chat control, automatic Twitch toke
   - Nimble Streamer API (bitrate + RTT trigger)
   - SRT Live Server stats JSON
 - Twitch IRC chat commands with configurable prefix
-- Moderator-only control commands (`fix`, `ss`, `start`, `stop`)
+- Moderator-only control commands (`fix`, `ss`, `start`, `stop`, `status`)
 - Twitch OAuth access token validation + refresh
 - Optional auto-stop stream on raid
 
@@ -202,6 +201,8 @@ Returns current bitrate value.
   - Starts OBS stream
 - `!stop`
   - Stops OBS stream
+- `!status`
+  - Reports OBS connection, stream state, current scene, switcher state, and bitrate
 
 Moderator+ means Twitch moderator or broadcaster.
 
